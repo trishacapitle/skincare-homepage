@@ -1,0 +1,78 @@
+@use "../variables" as *;
+
+.navbar {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100dvw;
+	padding: 0 1.25rem;
+
+	&__banner {
+		background-color: $primary-accent;
+		color: $primary-dark;
+		font-size: 0.75rem;
+		font-family: $font-mono;
+		width: 100dvw;
+
+		p {
+			margin: 0;
+			text-transform: uppercase;
+		}
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+		height: fit-content;
+		padding: 10px 0;
+	}
+
+	&__menu {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+
+		&-button {
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+
+		.navbar__logo {
+			height: 42px;
+			width: auto;
+		}
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 1.5rem;
+	}
+
+	&__action-button {
+		background-color: $primary-dark;
+		font-family: $font-mono;
+		color: #fff;
+		border: none;
+		cursor: pointer;
+		text-transform: uppercase;
+		border-radius: 9999px;
+		width: 200px;
+		height: 46px;
+
+		&--cart {
+			max-width: 36px;
+			background-color: transparent;
+			padding: 0;
+		}
+
+		img {
+			max-width: 36px;
+		}
+	}
+}
