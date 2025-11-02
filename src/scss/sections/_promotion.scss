@@ -1,0 +1,65 @@
+@use "../variables" as *;
+
+.promo {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 42px 88px;
+	background: $secondary-bg;
+
+	&__banner {
+		width: 80dvw;
+		height: 56px;
+		background: $primary-accent;
+		font-family: $font-mono;
+		border-radius: 9999px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 80px;
+	}
+	&__highlight {
+		text-decoration: underline;
+	}
+
+	&__content {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 70px;
+
+		hr {
+			opacity: 20%;
+			margin-bottom: 1rem;
+		}
+	}
+	&__image {
+		img {
+			width: 568px;
+		}
+	}
+	&__title {
+		font-family: $font-sans;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
+	}
+	&__description {
+		font-family: $font-mono;
+		margin-bottom: 1rem;
+	}
+
+	&__features {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		li {
+			font-family: $font-mono;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+	}
+}
