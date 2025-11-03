@@ -2,6 +2,7 @@
 
 .results {
 	text-align: center;
+	padding: 0;
 
 	&__texts-wrapper {
 		display: flex;
@@ -10,9 +11,11 @@
 		width: 50dvw;
 		margin: auto;
 		margin-bottom: 60px;
+		
 	}
 
 	&__title {
+    margin-top: 88px;
 		text-transform: uppercase;
 	}
 
@@ -25,7 +28,7 @@
 	}
 
 	&__quote {
-    color: white;
+		color: white;
 		text-transform: uppercase;
 		position: absolute;
 		width: 600px;
@@ -33,41 +36,41 @@
 		right: 8rem;
 	}
 
-  &__marquee-item {
-    text-transform: uppercase;
-  }
+	&__marquee-item {
+		text-transform: uppercase;
+	}
 }
 
 .results__marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  width: 100%;
-  padding: 1.25rem 0;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	padding: 1.25rem 0;
 
-  &-inner {
-    display: flex;
-    gap: 3rem;
-    animation: scroll 10s linear infinite;
-  }
+	&-inner {
+		display: flex;
+		gap: 3rem;
+		animation: scroll 10s linear infinite;
+	}
 
-  &-item {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    flex-shrink: 0;
-  }
+	&-item {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.5rem;
+		flex-shrink: 0;
+	}
 
-  &__icon {
-    width: 20px;
-    height: 20px;
-  }
+	&__icon {
+		width: 20px;
+		height: 20px;
+	}
 }
 
 @keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(-50%);
+	}
 }
