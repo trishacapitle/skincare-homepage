@@ -1,0 +1,53 @@
+@use "../variables" as *;
+
+.cta {
+	display: grid;
+	grid-template-columns: 1fr 1.25fr;
+	align-items: center;
+	gap: 10rem;
+	&__content {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+	&__banner-text {
+		background-color: $primary-accent;
+		width: fit-content;
+		border-radius: 9999px;
+		padding: 0.25rem 0.75rem;
+	}
+	&__image {
+		width: 600px;
+	}
+	&__divider {
+		opacity: 20%;
+	}
+	&__features {
+		list-style: none;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		li {
+			font-family: $font-mono;
+			display: flex;
+			align-items: center;
+			gap: 12px;
+		}
+	}
+	&__button {
+		padding: 0;
+		background-color: $primary-dark;
+		width: 380px;
+		height: 65px;
+		border-radius: 9999px;
+		text-transform: uppercase;
+		font-family: $font-mono;
+		font-size: 18px;
+		color: white;
+	}
+	&__price-discount {
+		text-decoration: line-through;
+		opacity: 30%;
+	}
+}
