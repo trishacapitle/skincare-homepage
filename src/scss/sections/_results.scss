@@ -1,9 +1,7 @@
 @use "../variables" as *;
 
 .results {
-	background: $secondary-bg;
 	text-align: center;
-	padding: 70px 0;
 
 	&__texts-wrapper {
 		display: flex;

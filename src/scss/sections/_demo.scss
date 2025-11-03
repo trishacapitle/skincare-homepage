@@ -1,12 +1,10 @@
 @use "../variables" as *;
 
 .demo {
-	background: $secondary-bg;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	gap: 44px;
-	padding: 116px 88px;
 	justify-content: center;
 
 	&__icon {
@@ -54,7 +52,7 @@
 	&__product {
 		display: flex;
 		align-items: center;
-    gap: 1.75rem;
+		gap: 1.75rem;
 	}
 
 	&__product-image {
